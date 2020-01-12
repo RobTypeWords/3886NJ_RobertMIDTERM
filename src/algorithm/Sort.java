@@ -4,8 +4,8 @@ public class Sort {
 
     long executionTime = 0;
 	/*
-	 * Please implement all the sorting algorithm. Feel free to add helper methods.
-	 * Store all the sorted data into one of the databases.
+	 * []Please implement all the sorting algorithm. Feel free to add helper methods.
+	 * Store all the sorted data into one of the databases.??????????
 	 */
 
 
@@ -36,6 +36,7 @@ public class Sort {
         int [] list = array;
         //implement here
 
+        // ADD HERE!!!!!!!!!!
 
 
         final long endTime = System.currentTimeMillis();
@@ -48,6 +49,8 @@ public class Sort {
         int [] list = array;
         //implement here
 
+            // ADD HERE!!!!!!!1
+
         
         
         return list;
@@ -58,7 +61,7 @@ public class Sort {
         int [] list = array;
         //implement here
         
-        
+        // ADD HERE!!!!!!!!!!!
 
         return list;
     }
@@ -68,7 +71,7 @@ public class Sort {
         int [] list = array;
         //implement here
         
-        
+            // ADD HERE!!!!!!!!!
 
         return list;
     }
@@ -77,7 +80,7 @@ public class Sort {
         int [] list = array;
         //implement here
         
-        
+        // ADD HERE!!!!!!!!!
 
         return list;
     }
@@ -87,7 +90,7 @@ public class Sort {
         int [] list = array;
         //implement here
         
-        
+        // ADD HERE!!!!!!!!!!
 
         return list;
     }
@@ -96,7 +99,7 @@ public class Sort {
         int [] list = array;
         //implement here
         
-        
+        // ADD HERE!!!!!!!
 
         return list;
     }
