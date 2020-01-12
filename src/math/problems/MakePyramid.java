@@ -11,9 +11,18 @@ public class MakePyramid {
                            * * * *
                           * * * * *
                          * * * * * *
-
         */
-
-
+        // Nested For loops
+        for (int a = 0; a < 5; a++) {
+            for (int b = 0; b < 5 - a; b++) {
+                System.out.print(" ");
+            }
+            for (int c = 0; c <= a; c++) {
+                System.out.print("* ");
+            }
+            System.out.println();
         }
+
+    }
+
   }
