@@ -12,5 +12,27 @@ public class Permutation {
          * Write Java program to compute all Permutation of a String
          *
          */
+
+
+        // Method call
+           perm("", "abcd");    // blank and input
+
     }
-}
+
+    public static void perm(String empty, String word){
+        int Wsize = word.length();
+        if(Wsize ==0){
+            System.out.println(empty + word);
+
+        } else{
+                for(int i=0; i<Wsize; i++){
+                    perm(empty + word.charAt(i), word.substring(0, i)  );
+                }
+              }
+        }
+
+
+    }
+
+
+
