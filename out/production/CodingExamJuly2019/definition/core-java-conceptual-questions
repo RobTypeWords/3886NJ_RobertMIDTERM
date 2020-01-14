@@ -1,85 +1,199 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A. it is the set of commands and syntax that gives a computer to perform a task
 
 
 
 
 What jdk contains or composed of and define each components?
-A.
+A. Java development Kit -> It container the compiler,...
 
 
 
 
 
 What is IDE?
-A.
+A. Integrated Development Enviroment
 
 
 
 What are the IDEs available in the market to support java?
-A.
+A. Eclipse, Inteliji,........
 
 
 
 Explain the entire java life cycle.
+    A: Editor, src, compiler, Byte code, JVM, Os
+
 what is class?
+    A: Blue print
+
 What is object?
+    A: Instance of a class
+
 What is the entry point of an application?
+    A: public static void(String [] argd)
+
 Why main is static?
+    A: This alows this jvm to have have access to other without having to instantiate
+
 Which class is the superclass of all classes?
+    A: Object Class
+
 What is difference between path and classpath variables?
+    A: A path is used by the OS to location program thats located in an environmental variable
+        Classpath is used by the jvm to locate the packages, classfiles within Java
+
 What is the difference between an Interface and Abstract class?
+        A:..............
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+        A:  No, no real Implementation has done dont -> you could you use a concrete class
+
 what is Access Specifier?
+    A: This..........................
+
 What is OOP ? Define each feature of java OOP.
+    A: Object Orient Progamming:
+            Inheritance -  A class acquiring properties from a parent class
+            Encapsulation -  Data Hiding
+            Polymorphism -  Many forms of an object
+            Abtraction - ........................
+
 What is Java Package and which package is imported by default?
+    A: Its a namespace that prevents naming collision. By default it should be java.lang
+
 What is API? Name list of API that you have used so far.
+    A: Application Programming Interface -> Java api,............
+
 Does java support multiple inheritance, explain why or why not?
+    : No -> This creates to much ambiguity
+
 What is method overloading and when it happens?
+    A: Method overloading is making method.......This occurs durning runtime
+
 Explain exceptions in java and how to handle it.
+    A: Exception is..........
+
 What is static keyword in java? How it has been used in variables and methods ?
+    A: It is an access Moftifer that allows a class to be accessaible except if you had declared with a static
+        it becomes part of that class instead of an instance -> Class.method
+
 What is final and how it has been used variables and methods?
+    A:..........
+
 What is final, finally and finalize?
+    A:............
+
 What is a constructor ?
+    A: This allows you to initialize a object
+
 Can we have multiple constructors in a class?
+    A: Yes, this is called constructor overloading
+
 If we don't have a constructor declared, what is called during the object creation?
+    A: The default constructor
+
 What is "this" keyword in java ?
+    A:.............
+
 What is "super" keyword in java? How many possible way can you use?
+    A: Refers to the Super class -> Can be used to ...........
+
 What is JVM stand for ?
+    A: Java virtual environment
+
 Is JVM platform independent?
+    A: Yes
+
 What version of java are you using?
+    A: 1.8
+
 What is JAR stand for ?
+    A: Java archive
+
 What is the difference between JDK and JVM?
+    A:.................
 What is the difference between JVM and JRE?
+    A: The jvm does not actually exist but the JRE does
+
 What is compile time and run time?
+    A:............
+
 What is heap?
+    A:.........
+
 How java manage it's memory?
+    A:.................
 What is the difference between String, StringBuffer and StringBuilder?
+    A:...............
+
 What is Singleton class?
+    A:............
+
 What is Serialization and Deserialization?
-when to use transient variable in java?
+    A:.................
+When to use transient variable in java?
+    A:.................
+
 Difference between while and do..while loop?
+    A: While is id pre-test loop and Do-While is a post condition
+
 What is Enum?
+    A: Constants.............
+
 What is Iterator?
+    A:...............
+
 Which one will take more memory, an int or Integer?
+    A:............
+
 Why is String Immutable in Java?
+    A:.............
+
 What is constructor chaining in Java?
+    A:..............
 The difference between Serial and Parallel Garbage Collector?
+    A:............
+
 What is JIT stands for?
+    A: Just in Time -> It improves the performance during runtime
+
 Explain Java Heap space and Garbage collection?
+    A:........
+
 Can you guarantee the garbage collection process?
+        A:
+
 What is the difference between stack and heap in Java?
+    A:........
 What is reflection in java and why is it useful?
+    A:..................
+
 what is multithreading in java?
+    A:............
+
 What is the use of synchronization in Java?
+    A:...........
+
 What is Framework?
+    A:....... acts as a guideline.....
+
 What are the testing Framework available in java?
+    A: jUnit and TestNG?????
+
 Difference between jUnit and testNG?
+    A:.................
+
 What are the dependencies for this project?
+    A:...........
+
 what is dependency injection in java?
+    A:.......
+
 What is static binding and dynamic binding?
+    A:............
 
 
 
