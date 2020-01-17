@@ -5,8 +5,10 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -54,19 +56,50 @@ public class CnnAPI {       // Make main here
     String sURL = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=d0330e1345de4761a5b63320e25e7636";
     NewsDataModel News = null;
     List<NewsDataModel> List1 = new ArrayList<NewsDataModel>();
-    //URL url = new URL(sURL);
-    //URLConnection request = url.openConnection();
-    //request.connect();
+
+    URL url;
+
+    {
+        try {
+            url = new URL(sURL);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    URLConnection request;
+    {
+        try {
+            request = url.openConnection();
+            request.connect();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+            //Json object with exceptions catch
     JsonArray jsonArray = null;
     JsonParser jp = new JsonParser();
-    //JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
-    //JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
-      //  if (root instanceof JsonObject) {
-        //JsonObject rootObj = root.getAsJsonObject();
-    //} else if (root instanceof JsonArray) {
-      //  jsonArray =  root.getAsJsonArray();
-    //}
+    JsonElement root;
 
+    {
+        try {
+            root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+            if (root instanceof JsonObject) {
+                JsonObject rootObj = root.getAsJsonObject();
+            } else if (root instanceof JsonArray) {
+                jsonArray =  root.getAsJsonArray();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+// Next
 
 
 
