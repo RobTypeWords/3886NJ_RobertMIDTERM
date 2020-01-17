@@ -14,15 +14,15 @@ public class Factorial{
        int FactNum = 5;
 
         // Place result here
-        int result = cal(FactNum);
+        int result = factor(FactNum);
         System.out.println("The results of the factorial should be " + result);
 
 
     }
-    public static int cal (int number ){        //Static method
+    public static int factor (int number ){        //Static method
         if(number == 0)
         {return 1;}
-        return number * cal(number - 1);
+        return number * factor(number - 1);
 
     }
 }
