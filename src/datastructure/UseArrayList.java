@@ -1,9 +1,6 @@
 package datastructure;
 
 import databases.ConnectToSqlDB;
-
-import javax.swing.text.html.HTMLDocument;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -58,9 +55,8 @@ public class UseArrayList {
 
 			//Storing ini database
 		//ConnectToSqlDB.connectToSqlDatabase();
-		ConnectToSqlDB DB = new ConnectToSqlDB();
-		//DB.insertDataFromArrayToSqlTable();
-		//insertDataFromArrayToSqlTable();
+		//ConnectToSqlDB DB = new ConnectToSqlDB();
+
 
 
 		//insertDataFromArrayListToSqlTable();		//(List<Student> list, String tableName, String columnName)
