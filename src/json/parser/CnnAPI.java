@@ -54,18 +54,18 @@ public class CnnAPI {       // Make main here
     String sURL = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=d0330e1345de4761a5b63320e25e7636";
     NewsDataModel News = null;
     List<NewsDataModel> List1 = new ArrayList<NewsDataModel>();
-    URL url = new URL(sURL);
-    URLConnection request = url.openConnection();
-    request.connect();
+    //URL url = new URL(sURL);
+    //URLConnection request = url.openConnection();
+    //request.connect();
     JsonArray jsonArray = null;
     JsonParser jp = new JsonParser();
-    JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
-    JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
-        if (root instanceof JsonObject) {
-        JsonObject rootObj = root.getAsJsonObject();
-    } else if (root instanceof JsonArray) {
-        jsonArray =  root.getAsJsonArray();
-    }
+    //JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+    //JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+      //  if (root instanceof JsonObject) {
+        //JsonObject rootObj = root.getAsJsonObject();
+    //} else if (root instanceof JsonArray) {
+      //  jsonArray =  root.getAsJsonArray();
+    //}
 
 
 
