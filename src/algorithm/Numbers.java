@@ -41,9 +41,34 @@ public class Numbers {
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
 		//By following above, Continue for rest of the Sorting Algorithm....
+		randomize (num, n);
+		// Insertions Sort
+
+		//Bubble Sort
+		algo.bubbleSort(num);
+		long bubbleSortExecutionTime = algo.executionTime;
+		System.out.println("Total Time of " + num.length + " in Bubble Sort: " + bubbleSortExecutionTime + " milli sec");
+
+		// Merge Sort
+		algo.mergeSort(num,0,n-1);
+		long mergeSortExecutionTime = algo.executionTime;
+		System.out.println("Total Time of " + num.length + " in Merge Sort: " + mergeSortExecutionTime + " milli sec");
 
 
-				// HERE!!!!!!!!!!!
+		// Quick Sort
+		algo.quickSort(num, 0, n-1);
+		long quickSortExecutionTime = algo.executionTime;
+		System.out.println("Total Time of " + num.length + " in Quick Sort: " + quickSortExecutionTime + " milli sec");
+
+		// Heap Sort (Skip)
+
+		// Bucket Sort
+		algo.bucketSort(num,5000000);
+		System.out.println("Total Execution Time of "+ num.length + " numbers in BucketSort take: " + algo.executionTime + " milli sec");
+
+
+
+		//Shell sort(Skip)
 
 
 
