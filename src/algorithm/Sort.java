@@ -114,24 +114,24 @@ public class Sort {
             }
 
             public int [] heapSort(int [] array){
-              int [] Listt = array;
+              int [] LIST = array;
             //implement here
                 final long startTime = System.currentTimeMillis();
 
                 //implement here
-                                                    //?????????
+                                                                        //?????????
                 final long endTime = System.currentTimeMillis();
                 final long executionTime = endTime-startTime;
                 this.executionTime = executionTime;
-                return Listt;
+                return LIST;
 
 
 
-            return Listt;
+            return LIST;
             }
 
 
-            public int [] bucketSort(int [] array){             //DONE!!
+            public int [] bucketSort(int[] array, int i){             //DONE!!
               int [] list = array;
                 final long startTime =System.currentTimeMillis();
             //implement here
@@ -159,7 +159,6 @@ public class Sort {
                 //implement here
 
                                                                  // ??????????
-
                 return list;
             }
 
