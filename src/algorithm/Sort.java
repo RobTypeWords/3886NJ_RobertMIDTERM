@@ -84,19 +84,14 @@ public class Sort {
             }
 
 
-             public int [] mergeSort(int [] array, int high, int low){
+             public int [] mergeSort(int [] array, int Left, int Right){ //Done
             final long startTime = System.currentTimeMillis();
                int [] list = array;
-               int center;
-               int sum = high + low;
-               center= sum/2;
-
-/**
- *                  TBA!!!!!!!!!!!!!!!!!!!!
- */
-
-
-
+               if (Left <= Right){
+                   int Middle = (Left + Right)/2;
+                   mergeSort(list, Left,Right);
+                   mergeSort(list, Middle +1,Right);
+               }
                  final long endTime = System.currentTimeMillis();
                  final long executionTime =endTime-startTime;
                  this.executionTime = executionTime;
@@ -107,39 +102,66 @@ public class Sort {
 
 
 
-            //public int [] quickSort(int [] array){
-            //  int [] list = array;
+            public int [] quickSort(int [] array, int L, int R){        //Done
+             int [] list = array;
             //implement here
 
-            // ADD HERE!!!!!!!!!
+                if(L <= R){
+                    quickSort(list, L,R);
+                    quickSort(list, 1,R );
+                }
+            return list;
+            }
 
-            //return list;
-            //}
-
-            //public int [] heapSort(int [] array){
-            //  int [] list = array;
+            public int [] heapSort(int [] array){
+              int [] Listt = array;
             //implement here
+                final long startTime = System.currentTimeMillis();
 
-            // ADD HERE!!!!!!!!!
+                //implement here
+                Sort sorter =new Sort();
+               // sorter.sort(Listt);                              //EROOR
+                //sorter.printArray(Listt);                        //ERROR
+                int a, b;
+                final long endTime = System.currentTimeMillis();
+                final long executionTime = endTime-startTime;
+                this.executionTime = executionTime;
+                return Listt;
 
-            //return list;
-            //}
 
 
-            //public int [] bucketSort(int [] array){
-            //  int [] list = array;
+            return Listt;
+            }
+
+
+            public int [] bucketSort(int [] array){             //DONE!!
+              int [] list = array;
+                final long startTime =System.currentTimeMillis();
             //implement here
+                int maxValue =0;
+                int[]a = new int[maxValue+1];
+                int[] sortedArray = new int[array.length];
+                for(int i=0;i<array.length;i++){
+                    a[array[i]]++;
+                }
+                int b =0;
+                for(int i=0;i<a.length;i++)
+                    for (int j=0;j<a[i];j++)
+                        sortedArray[b++] =i;
+                final long endtime =System.currentTimeMillis();
+                final long executionTime = endtime -startTime;
+                this.executionTime = executionTime;
 
-            // ADD HERE!!!!!!!!!!
 
-            //return list;
-            //}
+
+            return list;
+            }
 
             public int[] shellSort ( int[] array){
                 int[] list = array;
                 //implement here
 
-                // ??????????
+                                                                 // ??????????
 
                 return list;
             }
