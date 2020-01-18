@@ -35,12 +35,7 @@ public class FortuneEmployee {
 		Work.welcome();
 
 
-			//Store into data Structure
 
-		Map<Integer, List<EmployeeInfo> > MapEmployeeInfo = new HashMap<Integer, List<EmployeeInfo>>();
-		MapEmployeeInfo.put(1, a);
-
-			// Store into database
 
 	}
 
