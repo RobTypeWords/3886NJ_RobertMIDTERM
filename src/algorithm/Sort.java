@@ -119,10 +119,7 @@ public class Sort {
                 final long startTime = System.currentTimeMillis();
 
                 //implement here
-                Sort sorter =new Sort();
-               // sorter.sort(Listt);                              //EROOR
-                //sorter.printArray(Listt);                        //ERROR
-                int a, b;
+                                                    //?????????
                 final long endTime = System.currentTimeMillis();
                 final long executionTime = endTime-startTime;
                 this.executionTime = executionTime;
